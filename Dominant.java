@@ -1,6 +1,12 @@
 /**************************************************************
- Purpose/Description: <a brief description of the program>
- Author’s Panther ID: <your Panther ID number>
+ Purpose/Description: This program is designed to process an array of integers and then
+                        using the find dominant method find the dominant elements in the array.
+                        Dominant elements are integers which is bigger than every other integer to its
+                        right. For this we use a linear complexity (O(n)) loop to iterate through the array
+                        from the right to the left keeping track of each dominant elements. Elements which are considered
+                        dominant are set to true on a boolean parallel array. The output of which is then printed
+                        using the int array and the boolean array.
+ Author’s Panther ID: 5708475
  Certification:
  I hereby certify that this work is my own and none of it is the work of
  any other person.

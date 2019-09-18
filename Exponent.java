@@ -1,3 +1,15 @@
+/**************************************************************
+ Purpose/Description: This program is designed compute a number raised to another number in a sublinear time complexity.
+ In order to achieve this we must cut the program in half in constant time. In order to this we can define that:
+ X^N = X^(N/2) * X^(N/2). This allows us to greatly cut down the processing time and solve the problem in a recursive manner.
+ splitting the exponent in 2 can be done in constant time and to save processing resources we can store the result of
+ X^(N/2) into a temporary variable to prevent doing the same operation twice. This allows is to bring down the number of
+ multiplications done from 63 to only 12 in the case of X^63. which is < (N/2)/2.
+ Author’s Panther ID: 5708475
+ Certification:
+ I hereby certify that this work is my own and none of it is the work of
+ any other person.
+ **************************************************************/
 public class Exponent {
     static final int DEFAULT_VALUE_ONE = 0;
     static final int NUMBER_TO_ZERO = 1;
@@ -6,7 +18,7 @@ public class Exponent {
 
     public static void main(String[] args) {
         long base = 2;
-        int exponent = 62;
+        int exponent = 63;
         System.out.println(base + " raised to the " + exponent + " = " + exponent(base, exponent)
                 + " multiplication count: " + multiplicationCount);
     }
@@ -31,10 +43,10 @@ public class Exponent {
         long tmp = exponent(base, exponent / 2);
 
         if (exponent % 2 == 0) {
-            multiplicationCount += 2;
+            multiplicationCount++;
             return tmp * tmp;
         }
-        multiplicationCount += 3;
+        multiplicationCount += 2;
         return (base * tmp * tmp);
     }
 }
