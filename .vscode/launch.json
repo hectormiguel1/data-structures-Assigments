@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exponent",
+            "request": "launch",
+            "mainClass": "Exponent",
+            "projectName": "Assigment-1_a4152fb9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dominant",
+            "request": "launch",
+            "mainClass": "Dominant",
+            "projectName": "Assigment-1_a4152fb9"
+        }
+    ]
+}
