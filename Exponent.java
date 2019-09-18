@@ -5,7 +5,7 @@
  splitting the exponent in 2 can be done in constant time and to save processing resources we can store the result of
  X^(N/2) into a temporary variable to prevent doing the same operation twice. This allows is to bring down the number of
  multiplications done from 63 to only 12 in the case of X^63. which is < (N/2)/2.
- Author’s Panther ID: 5708475
+ Author’s Panther ID:
  Certification:
  I hereby certify that this work is my own and none of it is the work of
  any other person.
