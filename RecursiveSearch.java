@@ -9,7 +9,7 @@
  less then or greater than directionOne, and if it is less than or greater than Direction two, depending on the result
  a the function will be called recursely with the leftPosition and right positions moved accordingly. At the end
  either the index of the item desired will be returned or -1 to indicate that the item could not be found in the array.
- Author’s Panther ID: 5708475
+ Author’s Panther ID: #######
  Certification:
  I hereby certify that this work is my own and none of it is the work of
  any other person.
